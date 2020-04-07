@@ -6,6 +6,8 @@ ADD package.json yarn.lock /app/
 
 RUN yarn install --frozen-lockfile
 
-EXPOSE 3000
+ADD . /app
+
+EXPOSE 8080
 
 CMD ['yarn', 'start']

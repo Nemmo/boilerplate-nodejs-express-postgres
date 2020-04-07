@@ -11,9 +11,8 @@ services:
     working_dir: /app
     command: yarn start
     env_file:
-#      - .env
-      - jelastic.env
+      - .env
     volumes:
     - .:/app
     ports:
-    - 3000:3000
+    - 8080:8080
