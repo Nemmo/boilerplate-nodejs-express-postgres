@@ -19,3 +19,15 @@ node_modules/
 
 # Local env files
 *.env
+
+# Git
+.git/
+
+# Other extra files
+Dockerfile
+LICENSE
+readme.md
+docker-compose.yml
+.gitignore
+.env.example
+.dockerignore
