@@ -1,0 +1,16 @@
+version: '2'
+services:
+  postgres:
+    image: postgres:10.5-alpine
+    ports:
+    - 5432:5432
+  app:
+    image: node:10.15-slim
+    working_dir: /app
+    command: yarn start
+    env_file:
+      - .env
+    volumes:
+    - .:/app
+    ports:
+    - 3000:3000

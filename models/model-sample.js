@@ -2,7 +2,7 @@ const logger = require('../utils/logger');
 const dbUtil = require('../utils/dbUtil');
 const transactionSuccess = 'transaction success';
 
-/* 
+/*
  * sample query
  * @return server time
  */
@@ -17,7 +17,7 @@ module.exports.getTime = async () => {
     }
 }
 
-/* 
+/*
  * sample query using transactions
  * @return transaction success
  */
