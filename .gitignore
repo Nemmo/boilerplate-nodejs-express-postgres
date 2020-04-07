@@ -16,3 +16,6 @@ node_modules/
 
 # IDE files
 .idea/
+
+# Local env files
+*.env

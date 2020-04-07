@@ -5,11 +5,14 @@ services:
     ports:
     - 5432:5432
   app:
-    image: node:10.15-slim
+    image: nemmo/node-postgres-test:1.0
+    build:
+      context: .
     working_dir: /app
     command: yarn start
     env_file:
-      - .env
+#      - .env
+      - jelastic.env
     volumes:
     - .:/app
     ports:
